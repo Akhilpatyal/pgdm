@@ -3496,7 +3496,7 @@
 
 .new-fees-section .apply-now-section .price-info-cta {
     color: #fff;
-    background-color: #196ae5
+    background-color: linear-gradient(135deg, #000428, #004e92);
 }
 
 .new-fees-section .apply-now-section .price-info .price-info__heading,.new-fees-section .apply-now-section .price-info .price-info__subheading,.new-fees-section .apply-now-section .price-info .prog-fee {

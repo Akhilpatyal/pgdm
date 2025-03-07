@@ -36,10 +36,8 @@
     <link rel="stylesheet" href="css/Program_Page.css">
     <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/Layout.css">
-
-
     <link rel="stylesheet" href=" css/all.min.css"> 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 
 
@@ -3569,7 +3567,7 @@
             margin: auto
         }
     </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body data-mobile-app="false" class=" ">
@@ -3592,7 +3590,7 @@
             </div>
 
 
-            <section class="section pp-banner-wrapper banner-bg-image " data-section="top-banner">
+            <section class="section pp-banner-wrapper banner-bg-image "  >
                 <div class="pp-banner-container gl-grid">
                     <div class="pp-banner-left">
                         <div class="pp-banner__body ">
@@ -3617,20 +3615,21 @@
 
 
                                 <div class="lc-btn-section" form-title="Get your Brochure Copy"
-                                    form-page-identifier="great-lakes-pgdm-online"
-                                    form-course-page-identifier="great-lakes-pgdm-online"
+                                form-banner="images/varanasi.jpg"
                                     form-subtitle="Get details on the curriculum, fee, admission process, and more."
                                     form-controller="brochure">
 
                                     <a role="button" class="primary-button yellow-bg-button btn-style fixed-size-btn"
-                                        title="Download Brochure" data-title="Top Banner">
+                                        title="Download Brochure" data-title="Top Banner"  data-gl-target="lead-capture-modal"
+                                        data-source="website_lead_capture_form_brochure">
                                         Download Brochure
                                     </a>
                                 </div>
 
 
                                 <div class="application-btn-section">
-                                    <a href=" " class="yellow-transparent-button btn-style fixed-size-btn"
+                                    <a data-gl-target="lead-capture-modal"
+                                    data-source="website_lead_capture_form_brochure" class="yellow-transparent-button btn-style fixed-size-btn"
                                         target="_blank" rel="nofollow noopener noreferrer">Apply Now</a>
                                 </div>
 
@@ -3696,7 +3695,7 @@
                 <!-- form-1 -->
                 <div class="program-sticky-container js-pp-sticky ">
 
-                    <div class="download-brochure-card js-form-wrapper js-open-form-card">
+                    <div class="download-brochure-card  js-open-form-card">
                         <div class="js-form-wrapper  ">
                             <div class="lead-form-section">
                                 <div id="lead-form-head">
@@ -3761,10 +3760,8 @@
                                                 <div class="select-container ">
                                                     <select id="experience" data-test-id="experience" name="experience"
                                                         class="form-control " required>
-                                                        <option value="" disabled selected>LAW
+                                                        <option value="" disabled selected>MCA
                                                         </option>
-
-                                                        <option value="LAW">LAW</option>
                                                         <option value="MCA">MCA</option>
                                                         <option value="MBA">MBA</option>
                                                         <option value="BBA">BBA</option>
@@ -3824,22 +3821,15 @@
                                     <h3 class="brochure-card__title">
                                         Advance your career with SMS Varanasi where we aim to be a dynamic centre of excellence
                                     </h3>
-                                    <p class="brochure-card__subtitle">Earn an Online PGDM from one of India’s top
+                                    <p class="brochure-card__subtitle">Advance your career with SMS Varanasi from one of India’s top
                                         B-schools</p>
-                                    <div class="pp-banner-info">
-                                        <ul class="banner-info-list">
-                                            <li class="banner-info__item">
-                                                24 Months
-                                            </li>
-                                        </ul>
-                                    </div>
+                                   
                                     <div class="brochure-card__ctas">
                                         <div class="button-section non-js-btns " id="top-banner-button-section">
 
 
                                             <div class="lc-btn-section" form-title="Get your Brochure Copy"
-                                                form-page-identifier="great-lakes-pgdm-online"
-                                                form-course-page-identifier="great-lakes-pgdm-online"
+                                               
                                                 form-subtitle="Get details on the curriculum, fee, admission process, and more."
                                                 form-cta="Download Brochure" form-controller="brochure"
                                                 form-banner="images/varanasi.jpg" hide-deadline="">
@@ -3848,16 +3838,16 @@
                                                     class="primary-button yellow-bg-button btn-style fixed-size-btn"
                                                     title="Download Brochure" data-title="Floating Card"
                                                     data-gl-target="lead-capture-modal"
-                                                    data-source="website_lead_capture_form_brochure"
-                                                    data-lead-callback="">
+                                                    data-source="website_lead_capture_form_brochure" >
                                                     Download Brochure
                                                 </a>
                                             </div>
 
 
                                             <div class="application-btn-section">
-                                                <a href="#" class="yellow-transparent-button btn-style fixed-size-btn"
-                                                    target="_blank" rel="nofollow noopener noreferrer"
+                                                <a  data-gl-target="lead-capture-modal"
+                                                data-source="website_lead_capture_form_brochure" class="yellow-transparent-button btn-style fixed-size-btn"
+                                                     rel="nofollow noopener noreferrer"
                                                     title="Floating Card" data-title="Floating Card">Apply Now</a>
                                             </div>
 
@@ -3979,24 +3969,24 @@
                                 <ul class="overview-ranking-list">
                                     <li class="ranking__item">
                                         <img src="ranking/ranking1.png" class="lazy rank-ico"
-                                            alt="Association of MBAs Accreditation"
-                                            title="Association of MBAs Accreditation">
+                                            alt="AICTE & UGC Approved"
+                                            title="AICTE & UGC Approved">
                                         <div class="ranking-data">
                                             <h3 class="ranking__title">NATIONAL INSTITUTIONAL RANKING</h3>
                                         </div>
                                     </li>
                                     <li class="ranking__item">
                                         <img src="ranking/ranking2.png" class="lazy rank-ico"
-                                            alt="Ranked 5th by Analytics B-School"
-                                            title="Ranked 5th by Analytics B-School">
+                                            alt="SMS Varanasi B-School"
+                                            title="Top Ranked by Analytics B-School">
                                         <div class="ranking-data">
                                             <h3 class="ranking__title">LEARNING MANAGEMENT SYSTEM</h3>
                                         </div>
                                     </li>
                                     <li class="ranking__item">
                                         <img src="ranking/ranking3.png" class="lazy rank-ico"
-                                            alt="Association of Indian Universities Accredited"
-                                            title="Association of Indian Universities Accredited">
+                                            alt="Affiliated to Dr. A.P.J. Abdul Kalam Technical University"
+                                            title="Affiliated to Dr. A.P.J. Abdul Kalam Technical University">
                                         <div class="ranking-data">
                                             <h3 class="ranking__title"> AMAZING PLACEMENT OPPORTUNITIES 100+ TOP
                                                 RECRUITERS
@@ -4005,22 +3995,22 @@
                                     </li>
                                     <li class="ranking__item">
                                         <img src="ranking/ranking4.png" class="lazy rank-ico"
-                                            alt="Among Top Emerging B-Schools In India - NHRDN-2019"
-                                            title="Among Top Emerging B-Schools In India - NHRDN-2019">
+                                            alt="Among Top Emerging B-Schools In India"
+                                            title="Among Top Emerging B-Schools In India">
                                         <div class="ranking-data">
                                             <h3 class="ranking__title">INTERNAL QUALITY ASSURANCE CELL</h3>
                                         </div>
                                     </li>
                                     <li class="ranking__item">
                                         <img src="ranking/ranking5.png" class="lazy rank-ico"
-                                            alt="NBA and SAQS Accredited" title="NBA and SAQS Accredited">
+                                            alt="SMS Varanasi" title="SMS Varanasi">
                                         <div class="ranking-data">
                                             <h3 class="ranking__title">AMONG TOP 50 B-SCHOOL IN INDIA (NORTH) </h3>
                                         </div>
                                     </li>
                                     <li class="ranking__item">
-                                        <img src="ranking/ranking6.png" class="lazy rank-ico" alt="Ranked 34th"
-                                            title="Ranked 34th">
+                                        <img src="ranking/ranking6.png" class="lazy rank-ico" alt="Top 50 B-School in India"
+                                            title="Top 50 B-School in India">
                                         <div class="ranking-data">
                                             <h3 class="ranking__title">NAAC ACCREDITED "A" GRADE INSTITUTION</h3>
 
@@ -4076,13 +4066,10 @@
                                         Read more</p>
                                 </div>
                                 <div class="section-button-container">
-                                    <div class="lc-btn-section" form-title="Get your Brochure Copy"
-                                        form-page-identifier="great-lakes-pgdm-online"
-                                        form-course-page-identifier="great-lakes-pgdm-online" form-data-title=""
+                                    <div class="lc-btn-section" form-title="Get your Brochure Copy" 
                                         form-subtitle="Get details on the curriculum, fee, admission process, and more."
                                         form-cta="Download Brochure" form-controller="brochure"
-                                        form-banner="images/varanasi.jpg"
-                                        hide-deadline="">
+                                        form-banner="images/varanasi.jpg" >
                                         <button class="btn btn-sm " data-title="Top Banner"
                                             data-gl-target="lead-capture-modal"
                                             data-source="website_lead_capture_form_brochure">Download Brochure
@@ -4213,8 +4200,7 @@
                             </div>
                             <div class="section-button-container">
                                 <div class="lc-btn-section" form-title="Get your Brochure Copy"
-                                    form-page-identifier="great-lakes-pgdm-online"
-                                    form-course-page-identifier="great-lakes-pgdm-online" form-data-title=""
+                                     form-data-title=""
                                     form-subtitle="Get details on the curriculum, fee, admission process, and more."
                                     form-cta="Download Curriculum" form-controller="brochure"
                                     form-banner="images/varanasi.jpg" hide-deadline="">
@@ -4237,7 +4223,7 @@
                                     </div>
                                     <div class="accordion-body acc-body">
                                         <div class="accordion-content">
-                                            <div class="">
+                                            <div >
                                                 <p>
                                                 <p><b>Objective</b>: To impart contextual Management theories and practical curriculum to develop students as visionaries, problem solvers and decision-makers.</p>
                                                 <b>Duration</b>: 3 Years
@@ -4255,7 +4241,7 @@
                                     </div>
                                     <div class="accordion-body acc-body">
                                         <div class="accordion-content">
-                                            <div class="">
+                                            <div>
                                                 <p>
                                                 <p><b>Objective</b>: To prepare dynamic global managers capable of answering corporate challenges and demonstrating high ethical and moral standards.
                                                 </p>
@@ -4374,16 +4360,13 @@
                             <h2 class="section-title">School of Management Sciences (An Autonomous College)</h2>
                             <p class="section-sectitle small read-more-text"></p>
                         </div>
-                        <div class="section-body certificate-wrapper">
-                            <div class="certificate-container">
-                                <div class="certificate-image-container">
-                                    <img class="lazy certificate-image"
-                                        src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/placeholder.png"
-                                        data-src="https://d1vwxdpzbgdqj.cloudfront.net/images/pgdm_pitch_page/pgdm_certificate_gurgaon.jpg"
-                                        alt="Great lakes certificate" title="Great lakes certificate" width="100%">
-                                    <p class="certificate-note">
-                                        * Image for illustration only. Certificate subject to change.
-                                    </p>
+                        <div class="section-body ">
+                            <div >
+                                <div >
+                                    <img class="lazy image"
+                                        src="varanasi2.jpeg"
+                                        alt="SMS Varanasi" title="SMS Varanasi" width="100%">
+                                   
                                 </div>
                             </div>
                         </div>
@@ -4406,7 +4389,7 @@
                                             class="feedback-testimonial__item js-video-card free-flow__item gl-slider-slide">
                                             <div class="feedback-card">
                                                 <div class="feedback-card__head">
-                                                    <img width="48" height="48" class="feedback-card__img lazy"
+                                                    <img width="48" height="48" class="feedback-card__img lazy "
                                                         src="images/feedback/user-1.jpg"
                                                         alt="Mr. Vikram Pratap Singh - Learner"
                                                         title="Mr. Vikram Pratap Singh - Learner" />
@@ -4575,7 +4558,7 @@
                             <div class="faculty-slider js-expandable-contianer">
                                 <ul class="faculty-list">
                                     <li class="faculty-list__item js-expandable-items ">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/Dean.jpg"
@@ -4591,7 +4574,7 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="faculty-card__body">
+                                            <div class="faculty-card__body ">
                                                 <div
                                                     class="faculty-section-seo read-more-container js-readmore-conatiner">
                                                     <p class="section-sectitle small read-more-text">With 31 years of teaching and research experience, the professor specialises in Marketing Management, Integrated Marketing Communication, and Consumer Behaviour. A prolific researcher who has published 17 international and 10 national papers and presented 17 papers at prestigious conferences and seminars. He is an active member of the Varanasi Management Association (VMA) and has contributed to academia with three books/book chapters.
@@ -4603,7 +4586,7 @@
                                         </div>
                                     </li>
                                     <li class="faculty-list__item js-expandable-items ">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/kamalsheel.jpg"
@@ -4627,7 +4610,7 @@
                                         </div>
                                     </li>
                                     <li class="faculty-list__item js-expandable-items ">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/professor2.jpeg"
@@ -4646,12 +4629,14 @@
                                             <div class="faculty-card__body">
                                                 <div class="faculty-section-seo read-more-container js-readmore-conatiner">
                                                     <p class="section-sectitle small read-more-text">Prof. Raj Kumar Singh, HOD of Commerce at SMS Varanasi, holds a Ph.D., UGC-NET, and MBA from BHU with 12 years of teaching and 20 years of industry experience. His expertise spans Entrepreneurship Development, Startups Incubation, Marketing, and Strategic Management. He has published 18 research papers, presented 12 papers, and organized international and national conferences. He serves as Convener of Research & Development, Chairperson of multiple academic centers, and Coordinator for international accreditations. He has received numerous awards, including the Distinguished Teacher Award and Startups Mentor recognition at IIM Kashipur.</p>
+                                                    <p class="read-more-btn js-readmore-btn" data-title="faculties">Read
+                                                        more</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="faculty-list__item js-expandable-items ">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/sripriya1.jpg"
@@ -4677,7 +4662,7 @@
                                         </div>
                                     </li>
                                     <li class="faculty-list__item js-expandable-items hide">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/aditya.jpg"
@@ -4699,7 +4684,7 @@
                                         </div>
                                     </li>
                                     <li class="faculty-list__item js-expandable-items hide">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/pallavi.jpg"
@@ -4724,7 +4709,7 @@
                                         </div>
                                     </li>
                                     <li class="faculty-list__item js-expandable-items hide">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/sofia.jpg"
@@ -4749,7 +4734,7 @@
                                         </div>
                                     </li>
                                     <li class="faculty-list__item js-expandable-items hide">
-                                        <div class="faculty-card">
+                                        <div class="faculty-card shadow">
                                             <div class="faculty-card__head">
                                                 <img width="56" height="56" class="lazy faculty-image"
                                                     src="images/faculty/amitabh.jpg"
@@ -4810,8 +4795,8 @@
                                 <li class="career-support__item">
                                     <div class="career-support-card">
                                         <div class="career-support-banner">
-                                            <img class="lazy" src="images/main-camp.jpg" alt="banner-image"
-                                                title="ON CAMPUS IMMERSION">
+                                            <img class="lazy image2" src="images/main-camp.jpg" alt="banner-image"
+                                                title="ON CAMPUS IMMERSION" >
                                         </div>
                                         <div class="career-support-content">
                                             <h3 class="career-support__title">Utilize Modern Infrastructure: </h3>
@@ -4823,7 +4808,7 @@
                                 <li class="career-support__item">
                                     <div class="career-support-card">
                                         <div class="career-support-banner">
-                                            <img class="lazy" src="images/specialCourses.jpg" alt="banner-image"
+                                            <img class="lazy image2" src="images/specialCourses.jpg" alt="banner-image"
                                                 title="SPECIAL COURSES">
                                         </div>
                                         <div class="career-support-content">
@@ -4836,7 +4821,7 @@
                                 <li class="career-support__item">
                                     <div class="career-support-card">
                                         <div class="career-support-banner">
-                                            <img class="lazy" src="images/handsOnLearning.jpg" alt="banner-image"
+                                            <img class="lazy image2" src="images/handsOnLearning.jpg" alt="banner-image"
                                                 title="HANDS-ON LEARNING">
                                         </div>
                                         <div class="career-support-content">
@@ -4849,7 +4834,7 @@
                                 <li class="career-support__item">
                                     <div class="career-support-card">
                                         <div class="career-support-banner">
-                                            <img class="lazy" src="images/networking.gif" alt="banner-image"
+                                            <img class="lazy image2" src="images/networking.gif" alt="banner-image"
                                                 title="NETWORKING">
                                         </div>
                                         <div class="career-support-content">
@@ -4862,7 +4847,7 @@
                                 <li class="career-support__item">
                                     <div class="career-support-card">
                                         <div class="career-support-banner">
-                                            <img class="lazy" src="images/labs.jpg" alt="banner-image"
+                                            <img class="lazy image2" src="images/Party.jpg" alt="banner-image"
                                                 title="Extracurricular Activities">
                                         </div>
                                         <div class="career-support-content">
@@ -4889,14 +4874,11 @@
                                     <div class="gl-advantage-card">
                                         <div class="gl-advantage-banner">
                                             <img class="lazy gl-advantage-icon" src="images/icons/person-add.svg"
-                                                alt="banner-image" title="E-Portfolio">
+                                                alt="banner-image" title="Average Salary Package: 7 Lakhs">
                                         </div>
                                         <div class="gl-advantage-content">
-                                            <h3 class="gl-advantage__title">E-Portfolio</h3>
-                                            <p class="gl-advantage__subtitle">An e-portfolio is a snapshot of all the
-                                                projects done and skills acquired during the program that is shareable
-                                                across social media channels. This will help you showcase your expertise
-                                                to potential recruiters.</p>
+                                            <h3 class="gl-advantage__title">Average Salary Package: 7 Lakhs</h3>
+                                            <p class="gl-advantage__subtitle">With top recruiters offering competitive salary packages, our students secure lucrative positions in leading organizations. Our focus on employability skills ensures high earning potential for graduates.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -4959,16 +4941,13 @@
                                             <h3 class="price-info__heading">Starting at ₹ 7,938/month</h3>
                                             <p class="price-info__subheading">Program Fee: ₹ 3,70,000 </p>
                                         </div>
-                                        <!-- customize cta based on lead stage -->
-
-                                        <!-- if cta_info is empty then handle the banner cta and the application deadline as before by default -->
-                                        <!-- Fresh candidate -->
+                                       
                                         <a href="#"
                                             class="btn price-info-cta primary-button btn-style overlapped btn-md "
                                             data-title="Program fees with detail variant">
                                             Apply Now
                                         </a>
-                                        <!-- Show application deadline if asked -->
+                                       
 
 
 
@@ -5039,6 +5018,18 @@
                                                 alt="Propelld" title="Propelld" style="height:50px;">
                                             <img class="lazy gl-shimmer partner-image" src="images/recruit/recruit5.jpg"
                                                 alt="Propelld" title="Propelld" style="height:50px;">
+
+                                        </div>
+                                        <div class="payment-partners__images pt-8">
+                                            <img class="lazy gl-shimmer partner-image" src="images/recruit/bluedart-min.jpg"
+                                                alt="Liquid Loans" title="Liquid Loans" style="height:33px;">
+                                            <img class="lazy gl-shimmer partner-image" src="images/recruit/bridge-stone-min.jpg"
+                                                alt="Eduvanz" title="Eduvanz" style="height:50px;">
+                                            <img class="lazy gl-shimmer partner-image" src="images/recruit/mother-min.jpg"
+                                                alt="Propelld" title="Propelld" style="height:50px;">
+                                            <img class="lazy gl-shimmer partner-image" src="images/recruit/nestle-min.jpg"
+                                                alt="Propelld" title="Propelld" style="height:50px;">
+                                           
 
                                         </div>
                                     </div>
@@ -5152,17 +5143,14 @@
                             <ul class="application-process_list">
                                 <li class="process-list__item">
                                     <div class="process-list-card">
-                                        <img class="lazy process-card__icon"
-                                            data-src="https://d1vwxdpzbgdqj.cloudfront.net/program_seo/app1.png"
-                                            src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/placeholder.png"
+                                        <img class="lazy process-card__icon" 
+                                            src="images/icons/write.png"
                                             alt="steps icon" title="steps icon">
                                         <div class="process-card__content">
                                             <h3 class="process-card__title">1. Application Form</h3>
                                             <p class="process-card__subtitle"> Register by filling up the
-                                                <a href='https://www.greatlakes.edu.in/online/pgdm-online-registration'
-                                                    target='_blank' rel='nofollow noopener noreferrer'
-                                                    class='track-click-mp' data-title='Selection Process'>
-                                                    online application form >
+                                                <a style="color: gray;">
+                                                    <b>online application form ></b>
                                                 </a>
                                                 and provide some basic details.
                                             </p>
@@ -5172,8 +5160,7 @@
                                 <li class="process-list__item">
                                     <div class="process-list-card">
                                         <img class="lazy process-card__icon"
-                                            data-src="https://d1vwxdpzbgdqj.cloudfront.net/program_seo/app2.png"
-                                            src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/placeholder.png"
+                                            src="images/icons/user.png"
                                             alt="steps icon" title="steps icon">
                                         <div class="process-card__content">
                                             <h3 class="process-card__title">2. Screening</h3>
@@ -5185,8 +5172,7 @@
                                 <li class="process-list__item">
                                     <div class="process-list-card">
                                         <img class="lazy process-card__icon"
-                                            data-src="https://d1vwxdpzbgdqj.cloudfront.net/program_seo/app3.png"
-                                            src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/placeholder.png"
+                                            src="images/icons/cap.png"
                                             alt="steps icon" title="steps icon">
                                         <div class="process-card__content">
                                             <h3 class="process-card__title">3. Join the Program</h3>
@@ -5216,17 +5202,15 @@
                             <div class="application-deadline-slug">
                                 <div class="application-slug__body">
                                     <p class="application-slug__overline">Limited seats available</p>
-                                    <h3 class="application-slug__title">Apply today and become a Management Expert</h3>
+                                    <h3 class="application-slug__title">Apply today and become an Expert</h3>
                                 </div>
                                 <div class="application-slug__footer">
-                                    <!-- customize cta based on lead stage -->
-
-                                    <!-- if cta_info is empty then handle the banner cta and the application deadline as before by default -->
-                                    <!-- Fresh candidate -->
-                                    <a href="#" class="btn btn--xsm" data-title="Application Process Section">
+                                  
+                                    <a  data-gl-target="lead-capture-modal"
+                                    data-source="website_lead_capture_form_brochure" class="btn btn--xsm" data-title="Application Process Section">
                                         Apply Now
                                     </a>
-                                    <!-- Show application deadline if asked -->
+                                 
 
 
 
@@ -5246,12 +5230,13 @@
                                 <li class="bactches-list__item">
                                     <div class="bactches-list-card">
                                         <div class="batches-card__content">
-                                            <h3 class="bactches-card__date">Online · To be announced</h3>
+                                            <h3 class="bactches-card__date">To be announced</h3>
                                             <p class="bactches-card__status future">Admissions Open</p>
                                         </div>
                                         <div class="batches-card__btn">
 
-                                            <a href="#" class="btn btn--xsm" data-title="Batch start date">
+                                            <a  data-gl-target="lead-capture-modal"
+                                            data-source="website_lead_capture_form_brochure" class="btn btn--xsm" data-title="Batch start date">
                                                 Apply Now
                                             </a>
                                             <!-- Show application deadline if asked -->
@@ -5367,8 +5352,7 @@
 
 
                         <div class="lc-btn-section" form-title="Get your Brochure Copy"
-                            form-page-identifier="great-lakes-pgdm-online"
-                            form-course-page-identifier="great-lakes-pgdm-online" form-data-title=""
+                            form-data-title=""
                             form-subtitle="Get details on the curriculum, fee, admission process, and more."
                             form-cta="Download Brochure" form-controller="brochure" form-banner="images/varanasi.jpg"
                             hide-deadline="">
@@ -5442,13 +5426,13 @@
                             </div>
                         </div>
                     </div>
-
+<!-- phone number -->
                     <p class="guidance-bannerr__phone">
                         Speak with our expert
                         <a class="guidance-bannerr__tel" data-title="phone number" title="7536816478"
-                            href="tel:07052055555">07052055555</a>
+                            href="tel:"></a>
                         <a class="guidance-bannerr__tel" data-title="phone number" title="7536816478"
-                            href="tel:08953761666"> 08953761666(EPABX)</a>
+                            href="tel:"></a>
 
                     </p>
                 </div>
@@ -5755,31 +5739,23 @@
 
 
 
-
-        <nav aria-label="breadcrumb" class="container">
-            <ul class="breadcrumb-navigation">
-                <li class="breadcrumb-navigation__item">
-                    <a class="breadcrumb-item__link" itemprop="item">
-                        <i class="fa-solid fa-house"></i>
-                    </a>
-
-                </li>
-                <li class="breadcrumb-navigation__item">
-
-                    <a class="breadcrumb-item__link" itemid="management/courses">
-                        <span itemprop="name">Management Courses</span></a>
-                    <meta itemprop="position" content="2" />
-                </li>
-                <li class="breadcrumb-navigation__item active">
-                    <span itemprop="name">Post Graduate Diploma in Management (Online)</span>
-                    <meta itemprop="position" content="3" />
-                </li>
-            </ul>
-        </nav>
+        <footer>
+            <div class="footer-content">
+                <div style="margin: 10px 0px; font-style: italic; opacity: 0.8;">
+                    "Empowering Future Leaders with Innovation and Excellence."
+                </div>
+                <p style="margin: 0; font-size: 16px; opacity: 0.8;">
+                    &copy; 2025 - <strong>SMS Varanasi</strong>. All Rights Reserved.
+                </p>
+                <p style="margin: 5px 0; font-size: 14px; opacity: 0.6;">
+                    Designed by <a href="https://aajneeti.social/" target="_blank" style="color: #00d8ff; text-decoration: none; font-weight: bold;">Aajneeti Advertisement</a>
+                </p>
+               
+                
+            </div>
+        </footer>
 
 
-
-        <!--Include analytic tools-->
 
 
 

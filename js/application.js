@@ -1763,53 +1763,60 @@
                 window.dispatchEvent(new CustomEvent("driftload"));
               });
         });
-      docReady(function () {
-        !(function () {
-          try {
-            var e = document.getElementById("gl-page-settings");
-            (window.abVariantName = (
-              document.getElementById("ab_variant_name") ||
-              document.querySelector("input[name='ab_variant_name']") ||
-              {}
-            ).value),
-              (window.isMobile = window.innerWidth < 768),
-              (window.international = "true" === e.getAttribute("data-intl")),
-              (window.isEuropeanCountry =
-                "true" ===
-                document
-                  .getElementById("visitor-country")
-                  .getAttribute("data-iseuropean")),
-              (window.visitorCountry =
-                document.getElementById("visitor-country").value),
-              (window.pageCode = e.getAttribute("data-pg-code")),
-              (window.pageGroup = e.getAttribute("data-page-group")),
-              (window.isMobileAppAtt =
-                "true" === e.getAttribute("data-mobile-app-att"));
-          } catch (a) {
-            console.log("Unable to set global variables: " + a.message);
-          }
-        })(),
-          window.pageGroup &&
-            window.pageGroup.length > 0 &&
-            (s(656)("./" + window.pageGroup).catch(function (e) {
-              return console.log("No Page Group CSS available :" + e);
-            }),
+        docReady(function () {
+          !(function () {
+            try {
+              var e = document.getElementById("gl-page-settings");
+              var visitorCountryInput = document.getElementById("visitor-country");
+        
+              window.abVariantName =
+                (document.getElementById("ab_variant_name") ||
+                  document.querySelector("input[name='ab_variant_name']") ||
+                  {}).value || "";
+        
+              window.isMobile = window.innerWidth < 768;
+              window.international = e ? e.getAttribute("data-intl") === "true" : false;
+              window.isEuropeanCountry = visitorCountryInput
+                ? visitorCountryInput.getAttribute("data-iseuropean") === "true"
+                : false;
+              window.visitorCountry = visitorCountryInput ? visitorCountryInput.value : "IN";
+              window.pageCode = e ? e.getAttribute("data-pg-code") : "";
+              window.pageGroup = e ? e.getAttribute("data-page-group") : "";
+              window.isMobileAppAtt = e ? e.getAttribute("data-mobile-app-att") === "true" : false;
+            } catch (a) {
+              console.log("Unable to set global variables: " + a.message);
+            }
+          })();
+        
+          // Load CSS and JS for pageGroup if available
+          if (window.pageGroup && window.pageGroup.length > 0) {
+            s(656)("./" + window.pageGroup).catch(function (e) {
+              console.log("No Page Group CSS available: " + e);
+            });
             s(657)("./" + window.pageGroup).catch(function (e) {
-              return console.log("No Page Group JS available:" + e);
-            })),
-          window.pageCode &&
-            window.pageCode.length > 0 &&
-            (s(658)("./" + window.pageCode).catch(function (e) {
-              return console.log("No Page CSS available:" + e);
-            }),
+              console.log("No Page Group JS available: " + e);
+            });
+          }
+        
+          // Load CSS and JS for pageCode if available
+          if (window.pageCode && window.pageCode.length > 0) {
+            s(658)("./" + window.pageCode).catch(function (e) {
+              console.log("No Page CSS available: " + e);
+            });
             s(659)("./" + window.pageCode).catch(function (e) {
-              return console.log("No Page JS available:" + e);
-            }));
-        var e = Object.keys(window.onReadyLoadFns || {});
-        if (e.length > 0)
-          for (var a = 0; a < e.length; a++)
-            window.onReadyLoadFns[e[a]](), console.log(e[a], " - Executed");
-      }),
+              console.log("No Page JS available: " + e);
+            });
+          }
+        
+          // Execute any functions stored in `window.onReadyLoadFns`
+          var readyLoadFns = Object.keys(window.onReadyLoadFns || {});
+          if (readyLoadFns.length > 0) {
+            for (var i = 0; i < readyLoadFns.length; i++) {
+              window.onReadyLoadFns[readyLoadFns[i]]();
+              console.log(readyLoadFns[i], " - Executed");
+            }
+          }
+        });
         window.addEventListener("load", function () {
           var e;
           (e = window.innerHeight / 2),
